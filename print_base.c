@@ -61,7 +61,7 @@ int print_address(va_list args)
 {
 	void *ptr = va_arg(args, void *);
 	char str[50];
-	unsigned long add = (unsigned long)str;
+	unsigned long add = (unsigned long)ptr;
 
 	if (!ptr)
 		return (_puts("(nil)"));
