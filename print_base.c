@@ -19,7 +19,7 @@ int print_binary(va_list args)
  */
 int print_octal(va_list args)
 {
-	unsigned int n = va_args(args, unsigned int);
+	unsigned int n = va_arg(args, unsigned int);
 	char str[50];
 
 	convert_to_base(n, str, 8);

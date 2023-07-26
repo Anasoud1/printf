@@ -25,14 +25,15 @@ int _puts(char *s);
 int print_prc(va_list args);
 int print_ch(va_list args);
 int print_str(va_list args);
-int (*getfunc(const char *s))(va_list);
+int (*get_func(const char *s))(va_list);
 
 int print_int (va_list args);
 void int_to_str(long n, char *s);
 void reverse_str(char *s);
 
-void conver_to_base(unsigned long n, char *s, int b);
+void convert_to_base(unsigned long n, char *s, int b);
 int print_binary(va_list args);
+int print_unsigned(va_list);
 int print_octal(va_list args);
 int print_hex(va_list args);
 int print_HEX(va_list args);
